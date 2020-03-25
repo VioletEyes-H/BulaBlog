@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<div th:replace="yummy/header::header('首页','My Blog')"></div>
+<body>
+<div class="content">
+    <section class="jumbotron"
+             th:style="'background:url(' + @{http://cdn.bulabula.xyz/header.jpg} + ');background-repeat:no-repeat;background-size:100% 100%;background-attachment: fixed;'">
+        <div class="container">
+            <h2>对于不屈不挠的人来说，没有失败这回事。</h2>
+            <span class="meta-info hvr-grow">
+                <span class="octicon octicon-location"></span>
+                GuangDong
+            </span>
+            <!--            <span class="meta-info hvr-grow">-->
+            <!--                <span class="octicon octicon-organization"></span>-->
+            <!--                <a href="/" target="_blank">QQ Information</a>-->
+            <!--            </span>-->
+            <span class="meta-info hvr-grow">
+                <span class="octicon octicon-mark-github"></span>
+                <a href="https://github.com/VioletEyes-H" target="_blank">@VioletEyes-H</a>
+            </span>
+        </div>
+    </section>
+    <section class="content container">
+        <div class="row">
+            <!-- Post List -->
+            <div class="col-md-8">
+                <ol class="post-list">
+                    <th:block th:if="${null != blogPageResult}">
+                        <th:block th:each="blog,iterStat : ${blogPageResult.list}">
+                            <li class="post-list-item">
+                                <h3 class="post-list-title">
+                                    <a class="hvr-underline-from-center" th:href="@{'/blog/' + ${blog.id}}">
+                                        <th:block th:text="${blog.tittle}"></th:block>
+                                    </a>
+                                </h3>
+                                <p class="post-list-description">
+                                    <span class="index-summary-font" th:text="${blog.summary}"></span>
+                                </p>
+                                <!--                                <p class="post-list-cover-img">-->
+                                <!--                                    <a th:href="@{'/blog/' + ${blog.id}}"> <img th:src="@{${blog.blogCoverImage}}"-->
+                                <!--                                                                                    alt=""></a>-->
+                                <!--图片位置。打算做简介-->
+                                <!--                                </p>-->
+                                <p class="post-list-meta">
+                                    <span class="octicon octicon-calendar"
+                                    >&nbsp;<span
+                                            th:text="${#dates.format(blog.createTime, 'yyyy-MM-dd')}"></span></span>
+                                    <!--点赞，没想好咋写。-->
+                                    <!--                                    <span class="octicon octicon-thumbsup">20</span>-->
+                                    <span class="octicon octicon-eye" style="margin-left: 20px">&nbsp;<span
+                                            th:text="${blog.reading}"></span></span>
+
+                                </p>
+                            </li>
+                        </th:block>
+                    </th:block>
+                </ol>
+
+                <!-- Pagination -->
+                <th:block th:if="${null != blogPageResult}">
+                    <ul class="pagination text-align">
+                        <li th:class="${blogPageResult.currPage==1}?'disabled' : ''"><a
+                                th:href="@{${blogPageResult.currPage==1}?'##':'/page/' + ${blogPageResult.currPage-1}}">&laquo;</a>
+                        </li>
+                        <li th:if="${blogPageResult.currPage-3 >=1}"><a
+                                th:href="@{'/page/' + ${blogPageResult.currPage-3}}"
+                                th:text="${blogPageResult.currPage -3}">1</a></li>
+                        <li th:if="${blogPageResult.currPage-2 >=1}"><a
+                                th:href="@{'/page/' + ${blogPageResult.currPage-2}}"
+                                th:text="${blogPageResult.currPage -2}">1</a></li>
+                        <li th:if="${blogPageResult.currPage-1 >=1}"><a
+                                th:href="@{'/page/' + ${blogPageResult.currPage-1}}"
+                                th:text="${blogPageResult.currPage -1}">1</a></li>
+                        <li class="active"><a href="#" th:text="${blogPageResult.currPage}">1</a></li>
+                        <li th:if="${blogPageResult.currPage+1 <=blogPageResult.totalPage}"><a
+                                th:href="@{'/page/' + ${blogPageResult.currPage+1}}"
+                                th:text="${blogPageResult.currPage +1}">1</a></li>
+                        <li th:if="${blogPageResult.currPage+2 <=blogPageResult.totalPage}"><a
+                                th:href="@{'/page/' + ${blogPageResult.currPage+2}}"
+                                th:text="${blogPageResult.currPage +2}">1</a></li>
+                        <li th:if="${blogPageResult.currPage+3 <=blogPageResult.totalPage}"><a
+                                th:href="@{'/page/' + ${blogPageResult.currPage+3}}"
+                                th:text="${blogPageResult.currPage +3}">1</a></li>
+                        <li th:class="${blogPageResult.currPage==blogPageResult.totalPage}?'disabled' : ''"><a
+                                th:href="@{${blogPageResult.currPage==blogPageResult.totalPage}?'##' : '/page/' + ${blogPageResult.currPage+1}}">&raquo;</a>
+                        </li>
+                    </ul>
+                </th:block>
+            </div>
+
+
+            <div class="col-md-4">
+
+                <h3 class="sidebar-header">标签栏</h3>
+                <div class="tags">
+                    <th:block th:if="${null != hotTags}">
+                        <th:block th:each="hotTag : ${hotTags}">
+                            <a rel="tag" th:href="@{'/tag/' + ${hotTag.tagName}}">
+                                <th:block th:text="${hotTag.tagName}+'('+${hotTag.Count}+')'"></th:block>
+                            </a>
+                        </th:block>
+                    </th:block>
+                </div>
+
+                <h3 class="sidebar-header">最新文章</h3>
+                <ul class="list-group" style="margin:5px 20px 20px 20px">
+                    <th:block th:if="${null != newBlogs}">
+                        <th:block th:each="newblog : ${newBlogs}">
+                            <li class="list-group-item" style="padding: 5px 10px">
+                                <a class="link-a" th:href="@{'/blog/' + ${newblog.id}}">
+                                    <th:block th:text="${newblog.tittle}"></th:block>
+                                </a></li>
+                        </th:block>
+                    </th:block>
+                </ul>
+
+                <h3 class="sidebar-header">浏览最多</h3>
+                <ul class="list-group" style="margin: 5px 20px 20px 20px">
+                    <th:block th:if="${null != hotBlogs}">
+                        <th:block th:each="hotBlog : ${hotBlogs}">
+                            <li class="list-group-item" style="padding: 5px 10px"><a class="link-a"
+                                                                                     th:href="@{'/blog/' + ${hotBlog.id}}">
+                                <th:block th:text="${hotBlog.tittle}"></th:block>
+                            </a></li>
+                        </th:block>
+                    </th:block>
+                </ul>
+                <!--                <div id="blog-categories">-->
+                <!--                    <ul class="list-group">-->
+                <!--                        <th:block th:if="${null != hotTags}">-->
+                <!--                            <th:block th:each="hotTag : ${hotTags}">-->
+                <!--                                <li class="list-group-item"><a th:href="@{'/tag/' + ${hotTag.tagName}}">-->
+                <!--                                    <th:block th:text="${hotTag.tagName}"></th:block>-->
+                <!--                                    <span class="badge" th:text="${hotTag.tagCount}">1</span>-->
+                <!--                                </a></li>-->
+                <!--                            </th:block>-->
+                <!--                        </th:block>-->
+                <!--                    </ul>-->
+                <!--                </div>-->
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+<div th:replace="yummy/footer::footer"></div>
+</html>

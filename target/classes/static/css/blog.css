@@ -1,0 +1,25 @@
+.nav-bg-color{
+    background: #23262E;
+
+}
+
+.nav-login-btn{
+    position:relative;
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+    vertical-align:middle;
+    line-height:60px
+}
+
+.nav-logo-text{
+    position:absolute;
+    left:0;
+    top:0;
+    width: 200px;
+    height:100%;
+    line-height:60px;
+    text-align:center;
+    color:#009688;
+    font-size:16px
+}
