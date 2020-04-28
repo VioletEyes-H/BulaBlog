@@ -49,6 +49,7 @@ public class AdminController {
 
     @GetMapping({"/index", "/"})
     public String index(HttpServletRequest request) {
+        logger.debug("登录成功");
         request.setAttribute("path", "index");
         SimpleCountVo simpleCountVo = new SimpleCountVo();
         simpleCountVo.setBlogCount(blogService.getBlogCount());

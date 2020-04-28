@@ -77,7 +77,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         //通过重写configure方法添加自定义的认证方式
         provider.setUserDetailsService(userService);
         //设置密码加密程序认证
-        provider.setPasswordEncoder(NoOpPasswordEncoder.getInstance());
+        provider.setPasswordEncoder(new BCryptPasswordEncoder());
         return provider;
     }
+
 }

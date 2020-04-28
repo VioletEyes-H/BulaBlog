@@ -54,10 +54,10 @@ public class CategoryController {
         return categoryService.updateCategory(simpleCategories);
     }
 
-    @GetMapping("/save")
+    @PostMapping("/save")
     @ResponseBody
     public Result save(SimpleCategories simpleCategories) {
-        logger.debug("/categories/update请求数据：" + simpleCategories.toString());
+        logger.debug("/categories/save请求数据：" + simpleCategories.toString());
         return categoryService.saveCategory(simpleCategories);
     }
 

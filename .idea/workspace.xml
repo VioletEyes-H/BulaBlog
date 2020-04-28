@@ -607,18 +607,14 @@
     </option>
     <option name="importingSettings">
       <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
         <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectId" id="1UNXypt0EUl0AOV7Kjd6ePsKgRN" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -628,16 +624,17 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="构件" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -674,6 +671,19 @@
     </treeState>
   </component>
   <component name="RunManager" selected="Spring Boot.BlogApplication">
+    <configuration name="SecurityConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bula.blog.Config.SecurityConfig" />
+      <module name="BulaBlog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bula.blog.Config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BlogApplicationTests.addReading" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BulaBlog" />
       <extension name="coverage">
@@ -685,22 +695,6 @@
       <option name="PACKAGE_NAME" value="com.bula.blog" />
       <option name="MAIN_CLASS_NAME" value="com.bula.blog.BlogApplicationTests" />
       <option name="METHOD_NAME" value="addReading" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BlogApplicationTests.testHotTagsSide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BulaBlog" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bula.blog.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.bula.blog" />
-      <option name="MAIN_CLASS_NAME" value="com.bula.blog.BlogApplicationTests" />
-      <option name="METHOD_NAME" value="testHotTagsSide" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -754,10 +748,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.BlogApplication" />
+        <item itemvalue="Application.SecurityConfig" />
         <item itemvalue="JUnit.QINiuTest.testAccessToken" />
         <item itemvalue="JUnit.BlogApplicationTests.addReading" />
         <item itemvalue="JUnit.BlogApplicationTests.testTagForTagName" />
-        <item itemvalue="JUnit.BlogApplicationTests.testHotTagsSide" />
       </list>
     </recent_temporary>
   </component>
@@ -805,24 +799,27 @@
       <workItem from="1584359012617" duration="612000" />
       <workItem from="1584461825848" duration="43000" />
       <workItem from="1584546336238" duration="1849000" />
+      <workItem from="1588062622275" duration="1008000" />
+      <workItem from="1588063643038" duration="2331000" />
+      <workItem from="1588089479648" duration="3865000" />
+      <workItem from="1588093654526" duration="630000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -830,6 +827,10 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
+    <state x="842" y="382" key="#Notifications" timestamp="1588062629504">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="842" y="382" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1588062629504" />
     <state x="1032" y="182" key="#Project_Structure" timestamp="1583596144960">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -838,65 +839,69 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1245" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583596726336" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1584372754655">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1588063463233">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584372754655" />
-    <state width="914" height="348" key="GridCell.Tab.0.bottom" timestamp="1584013751973">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588063463233" />
+    <state width="1877" height="231" key="GridCell.Tab.0.bottom" timestamp="1588093561002">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584013751973" />
-    <state width="914" height="348" key="GridCell.Tab.0.center" timestamp="1584013751973">
+    <state width="1877" height="231" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588093561002" />
+    <state width="1877" height="231" key="GridCell.Tab.0.center" timestamp="1588093561001">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584013751973" />
-    <state width="914" height="348" key="GridCell.Tab.0.left" timestamp="1584013751973">
+    <state width="1877" height="231" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588093561001" />
+    <state width="1877" height="231" key="GridCell.Tab.0.left" timestamp="1588093561001">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584013751973" />
-    <state width="914" height="348" key="GridCell.Tab.0.right" timestamp="1584013751973">
+    <state width="1877" height="231" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588093561001" />
+    <state width="1877" height="231" key="GridCell.Tab.0.right" timestamp="1588093561002">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584013751973" />
-    <state width="914" height="348" key="GridCell.Tab.1.bottom" timestamp="1584013751973">
+    <state width="1877" height="231" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588093561002" />
+    <state width="1877" height="231" key="GridCell.Tab.1.bottom" timestamp="1588093561002">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584013751973" />
-    <state width="914" height="348" key="GridCell.Tab.1.center" timestamp="1584013751973">
+    <state width="1877" height="231" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588093561002" />
+    <state width="1877" height="231" key="GridCell.Tab.1.center" timestamp="1588093561002">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584013751973" />
-    <state width="914" height="348" key="GridCell.Tab.1.left" timestamp="1584013751973">
+    <state width="1877" height="231" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588093561002" />
+    <state width="1877" height="231" key="GridCell.Tab.1.left" timestamp="1588093561002">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584013751973" />
-    <state width="914" height="348" key="GridCell.Tab.1.right" timestamp="1584013751973">
+    <state width="1877" height="231" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588093561002" />
+    <state width="1877" height="231" key="GridCell.Tab.1.right" timestamp="1588093561002">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584013751973" />
-    <state width="914" height="348" key="GridCell.Tab.2.bottom" timestamp="1584013751974">
+    <state width="1877" height="231" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588093561002" />
+    <state width="1877" height="231" key="GridCell.Tab.2.bottom" timestamp="1588093561002">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584013751974" />
-    <state width="914" height="348" key="GridCell.Tab.2.center" timestamp="1584013751974">
+    <state width="1877" height="231" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588093561002" />
+    <state width="1877" height="231" key="GridCell.Tab.2.center" timestamp="1588093561002">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584013751974" />
-    <state width="914" height="348" key="GridCell.Tab.2.left" timestamp="1584013751973">
+    <state width="1877" height="231" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588093561002" />
+    <state width="1877" height="231" key="GridCell.Tab.2.left" timestamp="1588093561002">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584013751973" />
-    <state width="914" height="348" key="GridCell.Tab.2.right" timestamp="1584013751974">
+    <state width="1877" height="231" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588093561002" />
+    <state width="1877" height="231" key="GridCell.Tab.2.right" timestamp="1588093561002">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584013751974" />
-    <state x="122" y="175" key="SettingsEditor" timestamp="1584098497063">
+    <state width="1877" height="231" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588093561002" />
+    <state x="32" y="201" key="SettingsEditor" timestamp="1588094285948">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="122" y="175" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584098497063" />
+    <state x="32" y="201" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588094285948" />
     <state x="-27" y="62" key="new project wizard" timestamp="1584290944427">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-27" y="62" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1584290944427" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1588089528799">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588089528799" />
   </component>
 </project>
