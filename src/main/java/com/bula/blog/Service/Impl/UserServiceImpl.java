@@ -28,15 +28,13 @@ import java.util.List;
 import java.util.Set;
 
 @Service
-public class UserServiceImpl implements UserService, UserDetailsService {
+public class UserServiceImpl implements UserService,UserDetailsService {
     @Autowired
     private UserRepository userRepository;
-    @Autowired
-    private UserService userService;
 
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
-        Users users = userService.findUser(s);
+        Users users = this.findUser(s);
         if (users == null) {
             throw new UsernameNotFoundException("用户不存在");
         }
